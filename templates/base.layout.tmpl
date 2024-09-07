@@ -1,0 +1,60 @@
+{{define "base"}}
+<!-- This is the base layout that majority of the pages will have -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melodi: Learning Music Theory</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header class="header">
+    <a href="/"
+      ><img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/10fd5204cd5e7c67eace836ce88420b82700cb27ade0e2e8655e2f3dd6667043?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&"
+        alt="Company logo"
+        class="logo"
+    /></a>
+  </header>
+  <body>
+    <div id="profileSection" style="display: none">
+      <h2>Profile</h2>
+      <p>Username: <span id="profileUsername"></span></p>
+      <p>Email: <span id="profileEmail"></span></p>
+      <p>Progress: <span id="profileProgress"></span></p>
+      <p>Interactions: <span id="profileInteractions"></span></p>
+      <button onclick="signOut()">Sign Out</button>
+    </div>
+
+    <div class="div">
+      <div class="sidebar-content">
+        <div class="sidebar-column">
+          <nav class="sidebar-menu">
+            <a href="/play" class="menuNonclicked" id="changeThis">Play</a>
+            <a href="/learn" class="menuNonclicked" id="changeThis2">Learn</a>
+            <a href="/forum" class="menuNonclicked" id="changeThis3">Forum</a>
+            <a href="/leaderboard" class="menuNonclicked" id="changeThis4"
+              >Leaderboard</a
+            >
+            <a href="/profile" class="menuNonclicked" id="changeThis5"
+              >Profile</a
+            >
+          </nav>
+        </div>
+        {{block "content" .}}
+
+        {{ end }}
+      </div>
+    </div>
+
+    {{block "js" .}}
+
+    {{ end }}
+  </body>
+</html>
+{{ end }}

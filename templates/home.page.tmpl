@@ -1,0 +1,39 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+<div class="main-column">
+  <div class="main-content-wrapper">
+    <div class="main-content-body body-extra">
+      <img
+        loading="lazy"
+        srcset="
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=100   100w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=200   200w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=400   400w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=800   800w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=1200 1200w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=1600 1600w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&width=2000 2000w,
+          https://cdn.builder.io/api/v1/image/assets/TEMP/16ebe90bc3424850bab5b00e696575d2877d947b4bc7b3f451125fe27bc7cf2a?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&
+        "
+        class="mainLogo"
+      />
+
+      <div class="textUnderLogo">
+        &emsp;&emsp;&emsp; A competitive music theory leaerning website
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="user-profile">
+  <div class="user-avatar">
+    <img id="profilePhoto" loading="lazy" srcset="..." class="img-2" />
+  </div>
+  <div id="loginSection" class="home-login-temp">
+    <a href="login.html" class="loginButton">Login</a>
+  </div>
+</div>
+
+{{ end }}

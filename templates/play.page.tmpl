@@ -1,0 +1,62 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+<div class="main-column">
+  <div class="main-content-wrapper">
+    <div class="title-text">Games</div>
+    <div class="main-content-divider"></div>
+    <div class="main-content-body">
+      <div class="game">
+        <div class="game-2">
+          <div class="game-row">
+            <div class="game-column">
+              <div class="game-button">
+                <a href="matching.html">Match</a>
+              </div>
+            </div>
+            <div class="game-column-2">
+              <div class="game-button">
+                <a href="quiz.html">Assesment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-6">
+          <div class="game-row">
+            <div class="game-column">
+              <div class="game-button">
+                <a href="identify.html"> Identify</a>
+              </div>
+            </div>
+            <div class="game-column-3">
+              <div class="game-button">
+                <a href="piano.html">Piano</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="user-profile">
+  <div class="user-avatar">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c281d02ff57597a8ea93a8efab0d5f3ba580e71b2446bbceea23901d28483257?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&"
+      alt="User avatar"
+      class="user-avatar-image"
+    />
+  </div>
+  <div class="user-name">Name</div>
+</div>
+
+{{ end }}
+
+{{define "js"}}
+<script>
+  let getPlay = document.getElementById("changeThis");
+  getPlay.className = "menuClicked";
+</script>
+{{ end }}

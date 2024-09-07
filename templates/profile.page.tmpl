@@ -1,0 +1,33 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+<div class="main-column">
+  <div class="main-content-wrapper">
+    <div class="title-text">Profile</div>
+    <div class="main-content-divider"></div>
+    <!-- <div class="main-content-body">
+          <img src="leaderboardStandin.png"width="700" height: auto/>
+        </div> -->
+  </div>
+</div>
+
+<div class="user-profile">
+  <div class="user-avatar">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c281d02ff57597a8ea93a8efab0d5f3ba580e71b2446bbceea23901d28483257?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&"
+      alt="User avatar"
+      class="user-avatar-image"
+    />
+  </div>
+  <div class="user-name">Name</div>
+</div>
+
+{{ end }}
+
+{{define "js"}}
+<script>
+  let getPlay = document.getElementById("changeThis5");
+  getPlay.className = "menuClicked";
+</script>
+{{ end }}
