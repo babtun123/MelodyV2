@@ -1,17 +1,26 @@
 {{template "base" .}}
 
+{{ define "css"
+}}<link rel="stylesheet" type="text/css" href="/static/css/quiz.css" />{{ end }}
+
 {{define "content"}}
 <div class="main-column">
   <div class="main-content-wrapper">
-    <div class="title-text">Lessons</div>
+    <div class="title-text">Match Game</div>
     <div class="main-content-divider"></div>
     <div class="main-content-body">
-      <div class="lesson">
-        <div class="lesson-button">
-          <a href="/lessonone">𝄞𝄙 Lesson One: The Staff</a>
-        </div>
-        <div class="lesson-button">
-          <a href="/lessontwo">♫ Lesson Two: Notes, and Note Duration</a>
+      <div class="match-content">
+        <div class="match-version">
+          <div class="match-info">
+            <a href="matchGame1.html">Match One: Music Terms</a>
+            <p>
+            <span>Best Score(%):</span>
+            <span class="match-onescore">0</span>
+            <div class="match-bar">
+              <div class="match-one"></div>
+            </div>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -28,11 +37,4 @@
   </div>
   <div class="user-name">Name</div>
 </div>
-{{ end }}
-
-{{define "js"}}
-<script>
-  let getPlay = document.getElementById("changeThis2");
-  getPlay.className = "menuClicked";
-</script>
 {{ end }}

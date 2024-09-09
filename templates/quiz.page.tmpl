@@ -1,0 +1,78 @@
+{{template "base" .}}
+{{define "content"}}
+
+<div class="main-column">
+  <div class="main-content-wrapper">
+    <div class="title-text">Assessments based on lectures</div>
+    <div class="main-content-divider"></div>
+    <div class="main-content-body">
+      <div class="quiz-content">
+        <div class="quiz-version">
+            <div class="quiz-info">
+                <a href="quizOne.html">Assessment One: The staff</a>
+                <p>
+                    <span>Best Score(%):</span>
+                    <span class="q-onescore">0</span>
+                    <div class="progress-bar">
+                    <div class="progress-one"></div>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="quiz-version">
+            <div class="quiz-info">
+                <a href="quizTwo.html">Assessment Two: Notes and Duration</a>
+                <p>
+                    <span>Best Score(%):</span>
+                    <span class="q-twoscore">0</span>
+                    <div class="progress-bar">
+                    <div class="progress-two"></div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="quiz-version">
+            <div class="quiz-info">
+                <a href="quizThree.html">Assessment three: Time Signatures</a>
+                <p>
+                    <span>Best score(%):</span>
+                    <span class="q-threescore">0</span>
+                    <div class="progress-bar">
+                    <div class="progress-three"></div>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="quiz-version">
+            <div class="quiz-info">
+                <a href="quizFour.html">Assessment Four: Rests</a>
+                <p>
+                    <span>Best score(%):</span>
+                    <span class="q-fourscore">0</span>
+                    <div class="progress-bar">
+                    <div class="progress-four"></div>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="user-profile">
+    <div class="user-avatar">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c281d02ff57597a8ea93a8efab0d5f3ba580e71b2446bbceea23901d28483257?apiKey=ed9381361b0a41f9b47ca1eb51259dcc&"
+        alt="User avatar"
+        class="user-avatar-image"
+      />
+    </div>
+    <div class="user-name">Name</div>
+</div>
+
+{{ end }}

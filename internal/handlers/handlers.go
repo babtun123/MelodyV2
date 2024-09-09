@@ -57,3 +57,33 @@ func (m *Repository) Leaderboard(w http.ResponseWriter, r *http.Request) {
 func (m *Repository) Profile(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, r, "profile.page.tmpl", &models.TemplateData{})
 }
+
+// Match is the match page handler
+func (m *Repository) Match(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, r, "matchmenu.page.tmpl", &models.TemplateData{})
+}
+
+// LessonOne is the lesson 1 page handler
+func (m *Repository) LessonOne(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, r, "lesson1.page.tmpl", &models.TemplateData{})
+}
+
+// LessonTwo is the LessonTwo page handler
+func (m *Repository) LessonTwo(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, r, "lesson2.page.tmpl", &models.TemplateData{})
+}
+
+// Piano is the piano page handler
+func (m *Repository) Piano(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, r, "piano.page.tmpl", &models.TemplateData{})
+}
+
+// Quiz is the quiz page handler
+func (m *Repository) Quiz(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, r, "quiz.page.tmpl", &models.TemplateData{})
+}
+
+// Identify is the identify page handler
+func (m *Repository) Identify(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, r, "identify.page.tmpl", &models.TemplateData{})
+}
